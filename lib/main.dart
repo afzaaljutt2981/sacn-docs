@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           );
           return const GetMaterialApp(
             debugShowCheckedModeBanner: false,
-            title: 'Frame Scan',
+            title: 'Scan Docs',
             home: MySplashScreen(),
           );
         });
