@@ -1,6 +1,6 @@
 Frame Scan
 Frame Scan is a Flutter-based document scanner app that allows users to scan, crop, and save documents efficiently. The app ensures a smooth user experience with state management using GetX and local storage with Hive.
-
+ 
 
 
  Features
