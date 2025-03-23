@@ -9,7 +9,7 @@ Future<void> main() async {
    await AppStartupConfiguration.doConfigurations();
   runApp(const MyApp());
 }
-
+ 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
