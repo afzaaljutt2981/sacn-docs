@@ -103,7 +103,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                 preferences.put('startup_session', 'true');
                                 _onNextPressed();
                               },
-                              AppText('Sign in/Register', 17, FontWeight.normal,
+                              AppText('Get Started', 17, FontWeight.normal,
                                   AppColors.kWhiteColor),
                               height: 60.h,
                             )
