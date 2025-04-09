@@ -44,18 +44,18 @@ class HomeView extends StatelessWidget {
                         children: [
                           Image.file(File(homeController.imagePath.value)),
                           Positioned(
-                            right: 0.w,
+                            right:0.w,
                             top: 0.h,
                             child: PopupMenuButton<String>(
                               icon: Icon(
                                 Icons.more_vert,
-                                color: AppColors.kBlackColor,
-                                size: 25.sp,
+                                color: AppColors.kWhiteColor,
+                                size: 50.sp,
                               ),
                               onSelected: (value) {
                                 if (value == 'delete') {
                                   homeController.deleteImage();
-                                } else if (value == 'save') {
+                                } else if (value == 'save to gallery') {
                                   homeController.saveImageToGallery();
                                 }
                               },
@@ -64,7 +64,7 @@ class HomeView extends StatelessWidget {
                                     .map((String choice) {
                                   return PopupMenuItem<String>(
                                     value: choice,
-                                    child: AppText(choice, 14.sp, FontWeight.w400, AppColors.kBlackColor)
+                                    child: AppText(choice, 18.sp, FontWeight.w500, AppColors.kBlackColor)
                                   );
                                 }).toList();
                               },

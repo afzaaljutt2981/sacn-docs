@@ -90,6 +90,7 @@ class HomeController extends GetxController {
         final result = await ImageGallerySaver.saveFile(imagePath);
         if (result != null && result['isSuccess'] == true) {
           AppToast.showToast('Image saved to gallery!');
+          deleteImage();
         } else {
           AppToast.showToast('Failed to save image.');
         }
