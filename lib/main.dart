@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             [
               DeviceOrientation.portraitUp,
               DeviceOrientation.portraitDown,
-            ],
+            ], 
           );
           return const GetMaterialApp(
             debugShowCheckedModeBanner: false,
