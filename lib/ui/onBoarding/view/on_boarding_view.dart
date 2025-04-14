@@ -83,7 +83,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           20.verticalSpace,
                           Container(
                             padding: EdgeInsets.symmetric(
-                                vertical: 30.h, horizontal: 20.w),
+                                vertical: 20.h, horizontal: 20.w),
                             width: screenWidth,
                             decoration: BoxDecoration(
                                 color: Colors.grey.withOpacity(.08),
@@ -96,7 +96,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               textAlign: TextAlign.start,
                             ),
                           ),
-                          if (_currentIndex == 3) 20.verticalSpace,
+                          if (_currentIndex == 3) 10.verticalSpace,
                           if (_currentIndex == 3)
                             AppPrimaryButton(
                               () {
@@ -167,16 +167,3 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     );
   }
 }
-
-
-// GestureDetector(
-              //   onTap: ()=>       _onNextPressed(),
-              //   child: Container(
-              //     height: 60.sp,
-              //     decoration: const BoxDecoration(
-              //         shape: BoxShape.circle
-              //     ),
-                
-              //     child: Image.asset( _currentIndex == 0 ?'assets/images/onB1Button.png' :  _currentIndex == 1 ? 'assets/images/onB2Button.png' :'assets/images/onB3Button.png' ),
-              //   ),
-              // )

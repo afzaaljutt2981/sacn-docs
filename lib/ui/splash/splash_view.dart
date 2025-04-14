@@ -22,11 +22,10 @@ class _MySplashScreenState extends State<MySplashScreen> {
 
     if (preferences.get('startup_session') != null &&
         preferences.get('startup_session') == 'true') {
-           Timer(const Duration(seconds: 3), () {
-       AppNavigation.pushAndRemoveUntilPage(
-          context, PageTransitionType.fade, const HomeView());
+      Timer(const Duration(seconds: 3), () {
+        AppNavigation.pushAndRemoveUntilPage(
+            context, PageTransitionType.fade, const HomeView());
       });
-
     } else {
       Timer(const Duration(seconds: 3), () {
         AppNavigation.pushAndRemoveUntilPage(
